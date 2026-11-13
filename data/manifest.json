@@ -1,0 +1,624 @@
+{
+ "sources": [
+  {
+   "source_id": "openstax-intro-python",
+   "title": "Introduction to Python Programming (OpenStax), Udayan Das, Aubrey Lawson, Chris Mayfield, Narges Norouzi",
+   "source_path_or_url": "https://assets.openstax.org/oscms-prodcms/media/documents/Introduction_to_Python_Programming-WEB.pdf",
+   "book_page": "https://openstax.org/details/books/introduction-python-programming",
+   "local_path": "data/raw/Introduction_to_Python_Programming-WEB.pdf",
+   "license_or_permission": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0), as listed by the OpenStax CMS API (license_name). Used for non-commercial coursework with attribution; the PDF itself is not committed (download script provided).",
+   "accessed_at": "2026-11-13",
+   "snapshot": {
+    "sha256": "e1298e4fcfe541a8fc3bb786c5756d3d2be8e6ffc07997f1bc1e0ac270be383d",
+    "bytes": 9963388,
+    "physical_pages_in_pdf": 397
+   },
+   "version_note": "WEB PDF as served on the access date; no edition/effective date guessed.",
+   "scope": "Chapter 4 Decisions (PDF p.95-124), Chapter 5 Loops (p.125-146), Chapter 6 Functions (p.147-174)",
+   "page_counting_rule": "page = physical PDF page (1-based). A page counts as content when, after removing footers ('Access for free at openstax.org', running headers with printed page numbers), 'Access multimedia content' links and 'TRY IT' labels, >= 200 normalized characters remain. Blank pages are logged and excluded. Chapter-summary/reference pages (121-123, 143-145, 171-173) are counted because they contain explanatory text and reference tables; even without them 68 content pages remain (>= 30).",
+   "physical_pages_in_scope": 80,
+   "content_pages_counted": 77,
+   "excluded_pages": [
+    {
+     "page": 124,
+     "reason": "empty_or_short",
+     "chars": 0
+    },
+    {
+     "page": 146,
+     "reason": "empty_or_short",
+     "chars": 0
+    },
+    {
+     "page": 174,
+     "reason": "empty_or_short",
+     "chars": 0
+    }
+   ],
+   "total_normalized_chars": 80667,
+   "pages": [
+    {
+     "page": 95,
+     "printed_page": null,
+     "chapter": 4,
+     "sections_starting": [
+      "4.1"
+     ],
+     "chars": 1200
+    },
+    {
+     "page": 96,
+     "printed_page": 86,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 1075
+    },
+    {
+     "page": 97,
+     "printed_page": 87,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 929
+    },
+    {
+     "page": 98,
+     "printed_page": 88,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 1127
+    },
+    {
+     "page": 99,
+     "printed_page": 89,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 730
+    },
+    {
+     "page": 100,
+     "printed_page": 90,
+     "chapter": 4,
+     "sections_starting": [
+      "4.2"
+     ],
+     "chars": 1662
+    },
+    {
+     "page": 101,
+     "printed_page": 91,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 1089
+    },
+    {
+     "page": 102,
+     "printed_page": 92,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 1246
+    },
+    {
+     "page": 103,
+     "printed_page": 93,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 651
+    },
+    {
+     "page": 104,
+     "printed_page": 94,
+     "chapter": 4,
+     "sections_starting": [
+      "4.3"
+     ],
+     "chars": 1208
+    },
+    {
+     "page": 105,
+     "printed_page": 95,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 957
+    },
+    {
+     "page": 106,
+     "printed_page": 96,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 951
+    },
+    {
+     "page": 107,
+     "printed_page": 97,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 837
+    },
+    {
+     "page": 108,
+     "printed_page": 98,
+     "chapter": 4,
+     "sections_starting": [
+      "4.4"
+     ],
+     "chars": 1175
+    },
+    {
+     "page": 109,
+     "printed_page": 99,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 1271
+    },
+    {
+     "page": 110,
+     "printed_page": 100,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 1282
+    },
+    {
+     "page": 111,
+     "printed_page": 101,
+     "chapter": 4,
+     "sections_starting": [
+      "4.5"
+     ],
+     "chars": 1490
+    },
+    {
+     "page": 112,
+     "printed_page": 102,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 771
+    },
+    {
+     "page": 113,
+     "printed_page": 103,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 993
+    },
+    {
+     "page": 114,
+     "printed_page": 104,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 594
+    },
+    {
+     "page": 115,
+     "printed_page": 105,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 862
+    },
+    {
+     "page": 116,
+     "printed_page": 106,
+     "chapter": 4,
+     "sections_starting": [
+      "4.6"
+     ],
+     "chars": 1212
+    },
+    {
+     "page": 117,
+     "printed_page": 107,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 1043
+    },
+    {
+     "page": 118,
+     "printed_page": 108,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 711
+    },
+    {
+     "page": 119,
+     "printed_page": 109,
+     "chapter": 4,
+     "sections_starting": [
+      "4.7"
+     ],
+     "chars": 1315
+    },
+    {
+     "page": 120,
+     "printed_page": 110,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 1130
+    },
+    {
+     "page": 121,
+     "printed_page": 111,
+     "chapter": 4,
+     "sections_starting": [
+      "4.8"
+     ],
+     "chars": 1693
+    },
+    {
+     "page": 122,
+     "printed_page": 112,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 782
+    },
+    {
+     "page": 123,
+     "printed_page": 113,
+     "chapter": 4,
+     "sections_starting": [],
+     "chars": 389
+    },
+    {
+     "page": 125,
+     "printed_page": null,
+     "chapter": 5,
+     "sections_starting": [
+      "5.1"
+     ],
+     "chars": 1188
+    },
+    {
+     "page": 126,
+     "printed_page": 116,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 1335
+    },
+    {
+     "page": 127,
+     "printed_page": 117,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 1277
+    },
+    {
+     "page": 128,
+     "printed_page": 118,
+     "chapter": 5,
+     "sections_starting": [
+      "5.2"
+     ],
+     "chars": 1134
+    },
+    {
+     "page": 129,
+     "printed_page": 119,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 1096
+    },
+    {
+     "page": 130,
+     "printed_page": 120,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 1036
+    },
+    {
+     "page": 131,
+     "printed_page": 121,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 1104
+    },
+    {
+     "page": 132,
+     "printed_page": 122,
+     "chapter": 5,
+     "sections_starting": [
+      "5.3"
+     ],
+     "chars": 1129
+    },
+    {
+     "page": 133,
+     "printed_page": 123,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 1002
+    },
+    {
+     "page": 134,
+     "printed_page": 124,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 499
+    },
+    {
+     "page": 135,
+     "printed_page": 125,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 1042
+    },
+    {
+     "page": 136,
+     "printed_page": 126,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 763
+    },
+    {
+     "page": 137,
+     "printed_page": 127,
+     "chapter": 5,
+     "sections_starting": [
+      "5.4"
+     ],
+     "chars": 1211
+    },
+    {
+     "page": 138,
+     "printed_page": 128,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 887
+    },
+    {
+     "page": 139,
+     "printed_page": 129,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 931
+    },
+    {
+     "page": 140,
+     "printed_page": 130,
+     "chapter": 5,
+     "sections_starting": [
+      "5.5"
+     ],
+     "chars": 761
+    },
+    {
+     "page": 141,
+     "printed_page": 131,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 1536
+    },
+    {
+     "page": 142,
+     "printed_page": 132,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 556
+    },
+    {
+     "page": 143,
+     "printed_page": 133,
+     "chapter": 5,
+     "sections_starting": [
+      "5.6"
+     ],
+     "chars": 1605
+    },
+    {
+     "page": 144,
+     "printed_page": 134,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 576
+    },
+    {
+     "page": 145,
+     "printed_page": 135,
+     "chapter": 5,
+     "sections_starting": [],
+     "chars": 781
+    },
+    {
+     "page": 147,
+     "printed_page": null,
+     "chapter": 6,
+     "sections_starting": [
+      "6.1"
+     ],
+     "chars": 1066
+    },
+    {
+     "page": 148,
+     "printed_page": 138,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1281
+    },
+    {
+     "page": 149,
+     "printed_page": 139,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1274
+    },
+    {
+     "page": 150,
+     "printed_page": 140,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 685
+    },
+    {
+     "page": 151,
+     "printed_page": 141,
+     "chapter": 6,
+     "sections_starting": [
+      "6.2"
+     ],
+     "chars": 1304
+    },
+    {
+     "page": 152,
+     "printed_page": 142,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 988
+    },
+    {
+     "page": 153,
+     "printed_page": 143,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1008
+    },
+    {
+     "page": 154,
+     "printed_page": 144,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1180
+    },
+    {
+     "page": 155,
+     "printed_page": 145,
+     "chapter": 6,
+     "sections_starting": [
+      "6.3"
+     ],
+     "chars": 1092
+    },
+    {
+     "page": 156,
+     "printed_page": 146,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1013
+    },
+    {
+     "page": 157,
+     "printed_page": 147,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1023
+    },
+    {
+     "page": 158,
+     "printed_page": 148,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 704
+    },
+    {
+     "page": 159,
+     "printed_page": 149,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1294
+    },
+    {
+     "page": 160,
+     "printed_page": 150,
+     "chapter": 6,
+     "sections_starting": [
+      "6.4"
+     ],
+     "chars": 1185
+    },
+    {
+     "page": 161,
+     "printed_page": 151,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1123
+    },
+    {
+     "page": 162,
+     "printed_page": 152,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1413
+    },
+    {
+     "page": 163,
+     "printed_page": 153,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1282
+    },
+    {
+     "page": 164,
+     "printed_page": 154,
+     "chapter": 6,
+     "sections_starting": [
+      "6.5"
+     ],
+     "chars": 913
+    },
+    {
+     "page": 165,
+     "printed_page": 155,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1134
+    },
+    {
+     "page": 166,
+     "printed_page": 156,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1045
+    },
+    {
+     "page": 167,
+     "printed_page": 157,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 829
+    },
+    {
+     "page": 168,
+     "printed_page": 158,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 666
+    },
+    {
+     "page": 169,
+     "printed_page": 159,
+     "chapter": 6,
+     "sections_starting": [
+      "6.6"
+     ],
+     "chars": 1355
+    },
+    {
+     "page": 170,
+     "printed_page": 160,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 1280
+    },
+    {
+     "page": 171,
+     "printed_page": 161,
+     "chapter": 6,
+     "sections_starting": [
+      "6.7"
+     ],
+     "chars": 1845
+    },
+    {
+     "page": 172,
+     "printed_page": 162,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 604
+    },
+    {
+     "page": 173,
+     "printed_page": 163,
+     "chapter": 6,
+     "sections_starting": [],
+     "chars": 257
+    }
+   ]
+  }
+ ]
+}

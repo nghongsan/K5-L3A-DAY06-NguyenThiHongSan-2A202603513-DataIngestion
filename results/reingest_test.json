@@ -1,0 +1,30 @@
+{
+ "v1_chunks": 263,
+ "first_ingest": {
+  "before": 0,
+  "input_chunks": 263,
+  "written": 263,
+  "unchanged_skipped": 0,
+  "removed_stale": 0,
+  "after": 263
+ },
+ "same_version_reingest": {
+  "before": 263,
+  "input_chunks": 263,
+  "written": 0,
+  "unchanged_skipped": 263,
+  "removed_stale": 0,
+  "after": 263
+ },
+ "v2_chunks": 260,
+ "changed_version_ingest": {
+  "before": 263,
+  "input_chunks": 260,
+  "written": 1,
+  "unchanged_skipped": 259,
+  "removed_stale": 3,
+  "after": 260
+ },
+ "ok_no_duplicates": true,
+ "ok_stale_removed": true
+}

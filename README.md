@@ -1,3 +1,42 @@
+# Bài làm Day 06 — Data Ingestion (OpenStax Python, chương 4–6)
+
+**Corpus:** OpenStax *Introduction to Python Programming*, PDF tr. 95–174 (77 trang nội dung, CC BY-NC-SA 4.0); xem [data/manifest.json](data/manifest.json).
+**Embedding:** `intfloat/multilingual-e5-small` (local, 384d, CPU, $0) · **Vector store:** Chroma 1.5.9 persistent, cosine (HNSW).
+**Chiến lược:** A fixed 500/50 · B theo đoạn/heading ≤800 · C = B + filter `chapter`. **Chọn C** theo tiêu chí dev đã chốt trước.
+**Kết quả:** [results/summary.md](results/summary.md) · **Trang HTML xem trace từng câu:** [report/results_explorer.html](report/results_explorer.html) (tải về rồi mở bằng trình duyệt; bản online: https://claude.ai/artifact/QxChknDJMRB9KmUuUQ4zUH) · **Báo cáo:** [report/individual/2A202603513_NguyenThiHongSan.md](report/individual/2A202603513_NguyenThiHongSan.md)
+
+## Cách chạy lại
+
+Cần Python 3.11–3.12 (đã chạy với 3.12.3 trên macOS arm64). Không cần Docker hay API key.
+
+```bash
+./scripts/download_corpus.sh                 # tải PDF + kiểm tra sha256 snapshot
+cd starter
+python3.12 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt              # lần đầu sẽ tải model e5-small (~470MB) từ Hugging Face
+python -m src.run ingest                     # đọc, chuẩn hóa, kiểm evidence benchmark, chunk, embed, lưu A/B/C, kiểm tra nạp lại
+python -m src.run retrieve --split dev       # chạy dev (chọn chiến lược ở bước này)
+python -m src.run retrieve --split test      # chạy test sau khi đã chốt
+python -m src.run audit                      # xuất mẫu coherence để chấm tay
+python -m scripts.reingest_change_test       # kiểm tra nạp lại không trùng + xóa chunk cũ khi tài liệu đổi
+python -m src.summarize_results              # gộp chỉ số + nhãn tay -> results/summary.md
+python -m scripts.build_explorer             # sinh trang HTML report/results_explorer.html từ results/
+```
+
+| Thư mục / file | Nội dung |
+|---|---|
+| `starter/src/` | ingestion, chunking, embeddings, store (Chroma), evaluation, run |
+| `benchmark/questions.json` | 25 câu (19 dev / 6 test), gold page + evidence, 5 câu có filter |
+| `results/traces_{dev,test}.jsonl` | top-3 đầy đủ: text, score, metadata, cờ hit |
+| `results/metrics_*.json`, `results/summary.md` | Hit@1 / Evidence Hit@3 (n/N), thời gian |
+| `results/audit/*_labels.csv` | nhãn tay coherence, metadata, grounding |
+| `results/ingest_log.json`, `results/reingest_test.json`, `results/run_info.json` | log trang rỗng/lỗi, kiểm tra nạp lại, phiên bản & thời gian |
+| `artifacts/experiment_log.csv` | cấu hình, giả thuyết, tiêu chí chọn, kết quả |
+
+---
+
+# Đề bài gốc
+
 # Day 06 · Data Ingestion Engineering
 
 **Lab cá nhân** · **4 giờ** · **Dữ liệu tự chọn**

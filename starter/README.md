@@ -1,5 +1,11 @@
 # Starter · PostgreSQL + pgvector
 
+> **Bài làm đã hiện thực (đọc trước):** các TODO trong `src/` đã được hoàn thiện. Do máy làm bài không có Docker, pipeline nộp
+> dùng **Chroma (persistent, cosine)** thay cho PostgreSQL + pgvector và embedding local `intfloat/multilingual-e5-small`,
+> nên **không cần `.env`, Docker hay API key**. `docker-compose.yml`, `init.sql`, `scripts/check_setup.py` là phần starter gốc,
+> không dùng trong kết quả. Lệnh chạy thật xem [README ở thư mục gốc](../README.md); lệnh `python -m src.run` giờ cần subcommand
+> (`ingest`, `retrieve --split dev|test`, `audit`).
+
 Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo PostgreSQL + pgvector local; các file trong `src/` là **khung pseudocode có TODO**, chưa đọc tài liệu, tạo embedding, lưu vector hay chạy benchmark. Bạn cần tự hiện thực. Vẫn có thể chọn Qdrant, Chroma hoặc vector store tương đương theo [GUIDE.md](../GUIDE.md).
 
 ## Cấu trúc

@@ -1,0 +1,132 @@
+{
+ "run_at": "2026-11-13T09:59:58+00:00",
+ "python": "3.12.3",
+ "platform": "macOS-14.4.1-arm64-arm-64bit",
+ "embedding_model": "intfloat/multilingual-e5-small",
+ "dimensions": 384,
+ "embedding_provider": "local sentence-transformers on cpu, cost $0",
+ "vector_store": "chromadb 1.5.9 PersistentClient, HNSW, cosine",
+ "page_range": [
+  95,
+  174
+ ],
+ "content_pages": 77,
+ "read_seconds": 0.61,
+ "model_load_seconds": 7.86,
+ "strategies": {
+  "A": {
+   "chunking": "fixed_size",
+   "chunk_size": 500,
+   "overlap": 50,
+   "filter": false,
+   "index": "A",
+   "chunks": 210,
+   "chars_total": 87260,
+   "tokens_total": 26010,
+   "tokens_max": 220,
+   "chunks_over_512_tokens": 0,
+   "len_min": 51,
+   "len_median": 499.0,
+   "len_mean": 415.5,
+   "len_max": 500,
+   "len_p10": 189,
+   "len_p90": 500,
+   "chunk_seconds": 0.002,
+   "embed_seconds": 4.13,
+   "store_seconds": 0.13,
+   "upsert_first": {
+    "before": 0,
+    "input_chunks": 210,
+    "written": 210,
+    "unchanged_skipped": 0,
+    "removed_stale": 0,
+    "after": 210
+   },
+   "upsert_reingest": {
+    "before": 210,
+    "input_chunks": 210,
+    "written": 0,
+    "unchanged_skipped": 210,
+    "removed_stale": 0,
+    "after": 210
+   },
+   "cost_usd": 0.0
+  },
+  "B": {
+   "chunking": "by_paragraph",
+   "chunk_size": 800,
+   "overlap": 0,
+   "filter": false,
+   "index": "B",
+   "chunks": 263,
+   "chars_total": 80459,
+   "tokens_total": 24209,
+   "tokens_max": 211,
+   "chunks_over_512_tokens": 0,
+   "len_min": 66,
+   "len_median": 266,
+   "len_mean": 305.9,
+   "len_max": 742,
+   "len_p10": 205,
+   "len_p90": 476,
+   "chunk_seconds": 0.005,
+   "embed_seconds": 3.34,
+   "store_seconds": 0.13,
+   "upsert_first": {
+    "before": 0,
+    "input_chunks": 263,
+    "written": 263,
+    "unchanged_skipped": 0,
+    "removed_stale": 0,
+    "after": 263
+   },
+   "upsert_reingest": {
+    "before": 263,
+    "input_chunks": 263,
+    "written": 0,
+    "unchanged_skipped": 263,
+    "removed_stale": 0,
+    "after": 263
+   },
+   "cost_usd": 0.0
+  },
+  "C": {
+   "chunking": "by_paragraph",
+   "chunk_size": 800,
+   "overlap": 0,
+   "filter": true,
+   "index": "C",
+   "chunks": 263,
+   "chars_total": 80459,
+   "tokens_total": 24209,
+   "tokens_max": 211,
+   "chunks_over_512_tokens": 0,
+   "len_min": 66,
+   "len_median": 266,
+   "len_mean": 305.9,
+   "len_max": 742,
+   "len_p10": 205,
+   "len_p90": 476,
+   "chunk_seconds": 0.0,
+   "embed_seconds": 0.0,
+   "store_seconds": 0.12,
+   "upsert_first": {
+    "before": 0,
+    "input_chunks": 263,
+    "written": 263,
+    "unchanged_skipped": 0,
+    "removed_stale": 0,
+    "after": 263
+   },
+   "upsert_reingest": {
+    "before": 263,
+    "input_chunks": 263,
+    "written": 0,
+    "unchanged_skipped": 263,
+    "removed_stale": 0,
+    "after": 263
+   },
+   "cost_usd": 0.0
+  }
+ }
+}

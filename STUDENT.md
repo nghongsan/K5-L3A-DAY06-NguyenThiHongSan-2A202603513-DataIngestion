@@ -1,8 +1,8 @@
 # Thông tin học viên
 
-- Họ và tên:
-- MSSV:
-- Lớp: L3A / L3B / khác:
-- Chủ đề và corpus:
-- Repo bài nộp:
-- Commit chốt bài:
+- Họ và tên: Nguyễn Thị Hồng San
+- MSSV: 2A202603513
+- Lớp: L3A / L3B / khác: L3A
+- Chủ đề và corpus: Data ingestion & retrieval trên OpenStax *Introduction to Python Programming*, chương 4–6 (PDF tr. 95–174, 77 trang nội dung, CC BY-NC-SA 4.0)
+- Repo bài nộp: https://github.com/nghongsan/K5-L3A-DAY06-NguyenThiHongSan-2A202603513-DataIngestion.git
+- Commit chốt bài: 
